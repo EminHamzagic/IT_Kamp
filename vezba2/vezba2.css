@@ -1,0 +1,84 @@
+.container{
+    width: 49%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.center{
+    text-align: center;
+}
+
+label, input, button{
+    display: block;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.section{
+    display: inline-block;
+    width: 44%;
+    margin: 2%;
+    margin-top: 40px;
+    margin-left: 22px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    padding-left: 12px;
+    outline-color: rgb(88, 88, 255);
+}
+
+.section_textarea{
+    margin: 2%;
+    width: 93%;
+    margin-left: 22px;
+}
+
+.txtarea{
+    width: 100%;
+    height: 120px;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    resize: none;
+    padding: 12px;
+    outline-color: rgb(88, 88, 255);
+}
+
+.label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}
+
+p{
+    color: rgb(87, 87, 87);
+}
+
+.font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section_button{
+    width: 18%;
+    margin: auto;
+}
+
+.button{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(88, 88, 255);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

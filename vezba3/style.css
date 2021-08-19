@@ -1,0 +1,29 @@
+.right{
+    display: inline-block;
+    width: 49%;
+}
+
+.left{
+    display: inline-block;
+    width: 40%;
+}
+
+.box{
+    background-color: grey;
+    display: inline-block;
+    width: 210px;
+    height: 300px;
+    margin: 10px;
+}
+
+.gornji_deo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.donji_deo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

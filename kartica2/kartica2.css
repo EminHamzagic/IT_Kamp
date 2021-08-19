@@ -1,0 +1,80 @@
+div{
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 390px;
+    border: rgb(70, 70, 70) 3px solid;
+    border-radius: 5.5%;
+    background-color: rgb(32, 32, 32);
+}
+
+.icon_img{
+    margin: 8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+h2{
+    margin: 10px;
+    color: white;
+}
+
+.par{
+    color: rgb(122, 122, 122);
+    margin: 1px;
+    margin-left: 11px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.image{
+    border-radius: 5.5%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 70px; */
+}
+
+.icon{
+    margin-top: 12px;
+    color: rgb(122, 122, 122);
+    font-size: 20px;
+}
+
+.left{
+    float: left;
+}
+
+
+.number{
+    color: rgb(122, 122, 122);
+    margin: 5px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment{
+    margin-left: 72px;
+}
+
+.upvote{
+    margin-left: 22px;
+}
+
+.save{
+    margin-left: 92px;
+}
+
+
+.comment:hover, .save:hover{
+    color: rgb(87, 231, 87);
+}
+
+#upvote:hover + #number, .upvote:hover{
+    color: rgb(87, 231, 87);
+}
+

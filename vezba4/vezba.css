@@ -28,16 +28,21 @@ ul.a{
 
 .image{
     border-radius: 50%;
-    display: inline-block;
     margin: 0;
 }
 
 .header{
-    display: inline-block;
     margin: 0;
-    
 }
 
 p{
     margin-top: 10px;
+}
+
+.image_section{
+    display: inline-block;
+}
+
+.header_section{
+    display: inline-block;
 }

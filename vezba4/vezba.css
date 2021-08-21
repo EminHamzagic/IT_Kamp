@@ -1,0 +1,43 @@
+.container{
+    width: 95%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+li, h3, h4, p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul.a{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.List{
+    display: inline-block;
+    margin: 40px;
+}
+
+.section{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.image{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0;
+}
+
+.header{
+    display: inline-block;
+    margin: 0;
+    
+}
+
+p{
+    margin-top: 10px;
+}

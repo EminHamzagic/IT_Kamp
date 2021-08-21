@@ -31,7 +31,6 @@ h1{
 .section{
     display: inline-block;
     width: 27%;
-    border:solid 1px black;
     padding: 20px;
     height: 150px;
     border: 1px rgb(221, 221, 221) solid;

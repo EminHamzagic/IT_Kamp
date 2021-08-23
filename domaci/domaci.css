@@ -1,0 +1,57 @@
+.flex-box{
+    display: flex;
+}
+
+.flex-box > img{
+    margin: 10px;
+    margin-right: 1px;
+    padding: 10px;
+    padding-right: 5px;
+}
+
+.flex-box > h3{
+    margin: 10px;
+    padding: 21px;
+    margin-left: 1px;
+    padding-left: 3px;
+}
+
+.container{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+ul.a{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin: 10px;
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+}
+
+.font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+    font-weight: 500;
+}
+
+.section{
+    margin: 20px;
+    margin-top: 33px;
+}

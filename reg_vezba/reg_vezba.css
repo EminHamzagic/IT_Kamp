@@ -1,0 +1,125 @@
+.head_container{
+    width: 51%;
+    margin: auto;
+    border: black 1px solid;
+    height: 50px;
+    background-color: black;
+}
+
+.container{
+    width: 51%;
+    margin: auto;
+    border: black 1px solid;
+}
+
+.font{
+    font-family: sans-serif;
+}
+
+
+h3{
+    display: inline-block;
+    margin-left: 270px;
+    margin-top: 1px;
+    color: white;
+}
+
+.x{
+    display: inline-block;
+    margin-left: 240px;
+    color: white;
+}
+
+label{
+    font-size: 13.5px;
+    display: block;
+}
+
+.input_section{
+    width: 45%;
+    display: inline-block;
+    margin: 15px;
+}
+
+.input{
+    display: block;
+    width: 98%;
+    height: 30px;
+}
+
+.font_fmly{
+    font-family: sans-serif;
+}
+
+.radio_button_section{
+    width: 46%;
+    display: inline-block;
+    margin: 15px;
+}
+
+.radio_label{
+    display: inline-block;
+    margin-left: 8px;
+    font-family: sans-serif;
+}
+
+.radio_button{
+    display: inline-block;
+    margin: 0;
+    color: black;
+}
+
+.zpol{
+    margin-left: 40px;
+}
+
+
+.p_pol{
+    margin-bottom: 5px;
+}
+
+.human_check_section{
+    display: inline-block;
+    width: 44%;
+    margin: 10px;
+    border: rgb(167, 167, 167) 1px solid;
+}
+
+.button{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+.p_robot{
+    display: inline-block;
+}
+
+.checkbox{
+    display: inline-block;
+}
+
+.label_checkbox{
+    display: inline-block;
+    font-size: 13.5px;
+}
+
+.checkbox_section{
+    margin: 10px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.registration_button{
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+}

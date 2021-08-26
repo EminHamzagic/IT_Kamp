@@ -1,0 +1,39 @@
+header, article, nav ,aside, footer{
+    border: black 1px solid;
+}
+
+header{
+    width: 99%;
+    height: 7vh;
+    position: relative;
+}
+
+section{
+    width: 99.75%;
+    height: 80vh;
+    padding: 0;
+}
+
+article{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+nav{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+aside{
+    width: 19%;
+    height: 100%;
+    float: left;
+}
+
+
+footer{
+    width: 99%;
+    height: 8vh;
+}

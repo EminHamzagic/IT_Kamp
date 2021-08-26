@@ -1,0 +1,15 @@
+table{
+    border: gray 1px solid;
+    border-collapse: collapse;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+td, th{
+    border: gray 1px solid;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(196, 196, 196);
+}

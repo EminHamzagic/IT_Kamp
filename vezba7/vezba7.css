@@ -1,0 +1,38 @@
+div{
+    position: relative;
+    border: 1px solid black;
+}
+
+.div1{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    top: 80px;
+    left: 40px;
+}
+
+.div2{
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+    left: 280px;
+    z-index: 1;
+}
+
+.div3{
+    width: 500px;
+    height: 200px;
+    background-color: blueviolet;
+    top: -100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.div4{
+    width: 100px;
+    height: 500px;
+    background-color: coral;
+    top: -700px;
+    left: 550px;
+    z-index: 3;
+}

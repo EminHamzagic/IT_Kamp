@@ -1,0 +1,44 @@
+body{
+    font-family: sans-serif;
+}
+
+li{
+    margin: 8px;
+    padding: 0;
+    display: inline-block;
+}
+
+.head_container{
+    display: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+Button{
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}

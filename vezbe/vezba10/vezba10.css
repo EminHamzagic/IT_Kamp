@@ -13,6 +13,7 @@ li{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    border: 1px solid black;
 }
 
 .logo{

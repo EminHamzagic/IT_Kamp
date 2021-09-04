@@ -2,7 +2,7 @@
     width: 400px;
     height: 200px;
     background-color: aqua;
-    transition: width, height, backgorund-color, ease-in-out, 1.5s;
+    transition: width, height, ease-in-out, 1.5s;
 }
 
 .box:hover{

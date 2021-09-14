@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes{
+    border: 1rem solid black;
+}
+
+.box{
+    padding: 5rem;
+}
+
+.box1{
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box2{
+    background-color: yellow;
+}
+
+.box3{
+    background-color: lime;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4{
+    background-color: mediumblue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box5{
+    background-color: crimson;
+    display: none;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 1rem;
+}

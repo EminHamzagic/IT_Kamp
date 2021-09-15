@@ -14,33 +14,32 @@
 
 .box1{
     background-color: pink;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: box1;
 }
 
 .box2{
     background-color: yellow;
+    grid-area: box2;
 }
 
 .box3{
     background-color: lime;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-area: box3;
 }
 
 .box4{
     background-color: mediumblue;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-area: box4;
 }
 
 .box5{
     background-color: crimson;
-    display: none;
+    grid-area: box5;
 }
 
 .boxes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem 1rem;
+    grid-template-areas: 'box3 box1 box5' 'box2 . box4';
 }

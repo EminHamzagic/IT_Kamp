@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    background-color: orange;
+    grid-area: box1;
+}
+
+.box2{
+    background-color: rgb(45, 45, 231);
+    grid-area: box2;
+}
+
+.box3{
+    background-color: rgb(253, 75, 104);
+    grid-area: box3;
+}
+
+.box4{
+    background-color: green;
+    grid-area: box4;
+}
+
+.container{
+    width: 90%;
+    height: 80vh;
+    border: 1rem solid black;
+    display: grid;
+    gap: 0.5rem 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'box1 box1 box1 box1' 'box2 box2 . box3' 'box4 box4 box4 box4';
+}

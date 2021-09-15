@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 30px;
+    width: 60%;
+    height: 80vh;
+    border: 1rem grey solid;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 'box1 box1 box1 box2' 'box3 box3 box4 box4' 'box3 box3 box5 box5' 'box6 box7 box7 box8';
+}
+
+.red{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+}
+
+.purple{
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+}
+
+.blue{
+    background-color: rgb(10, 56, 153);
+    width: 100%;
+    height: 100%;
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.box4{
+    grid-area: box4;
+}
+
+.box5{
+    grid-area: box5;
+}
+
+.box6{
+    grid-area: box6;
+}
+
+.box7{
+    grid-area: box7;
+}
+
+.box8{
+    grid-area: box8;
+}

@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210vh;
+    flex-direction: column;
+    /* background-color: rgba(87, 87, 163, 0.541); */
+    background: linear-gradient(rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0.7)) ,url("https://media.itpro.co.uk/image/upload/f_auto,t_primary-image-desktop@1/v1570817045/itpro/2019/03/young_people_programming_a_coding_project.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, h1{
+    color: white;
+    margin: 0;
+}
+
+label{
+    color: white;
+    font-size: 15px;
+}
+
+.container p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.input_info{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+input[type=checkbox], input[type=radio]{
+    margin-right: 10px;
+}
+
+select{
+    padding-left: 10px;
+}
+
+.container{
+    width: 60%;
+    height: 90%;
+    background-color: rgba(0, 0, 34, 0.9);
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type=text]{
+    width: 100%;
+    height: 35px;
+}
+
+.select_div{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 100%;
+    height: 34px;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.radio_section{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.radio_section input{
+    width: 2%;
+    box-sizing: border-box;
+    height: 24px;
+}
+
+.checkbox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.chechbox_section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chechbox_section input{
+    width: 2%;
+    height: 20px;
+}
+
+.txtarea{
+    display: flex;
+    flex-direction: column;
+    width: 99.2%;
+}
+
+.txtarea textarea{
+    width: 100%;
+    resize: vertical;
+}
+
+.button{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 150, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+}
+
+@media screen and (max-width:600px){
+    body{
+        height: 160vh;
+    }
+    
+    body h1{
+        font-size: 25px;
+    }
+
+    .p{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .container{
+        text-align: none;
+        width: 90%;
+        height: 90%;
+        padding: 15px;
+    }
+
+    .radio_section input{
+        width: 5%;
+    }
+
+    .chechbox_section input{
+        width: 5%;
+    }
+
+    .select option{
+        width: 100%;
+    }
+}

@@ -9,29 +9,28 @@
     height: 8vh;
     background-color: rgb(29, 29, 29);
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-start; */
 }
 
 .menu{
     height: 100%;
-    width: 4%;
+    width: 40px;
     font-size: 20px;
     color: white;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     z-index: 99;
+    display: none;
 }
 
 .menu:hover .drop_menu{
     display: block;
 }
 
-.menu:hover 
-
 .menu:hover .home{
     background-color: rgb(35, 153, 35);
-    width: 96%;
+    width: 90%;
     justify-content: flex-start;
     padding-left: 15px;
 }
@@ -45,7 +44,7 @@
     height: 8vh;
     background-color: rgb(35, 153, 35);
     color: white;
-    width: 6%;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,4 +76,52 @@
 
 .drop_menu li div:hover{
     background-color: rgb(70, 70, 70);
+}
+
+.navbar_menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar_menu li{
+    width: 90px;
+}
+
+.navbar_menu li div{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar_menu li:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.navbar_menu li:nth-child(1){
+    background-color: rgb(35, 153, 35);;
+}
+
+.navbar_menu li:nth-child(1):hover{
+    background-color: rgb(85, 158, 85);
+}
+
+@media screen and (max-width: 600px) {
+    .navbar_menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .navbar{
+        justify-content: flex-end;
+    }
 }

@@ -122,3 +122,17 @@
 
 
 
+
+
+br1 = parseInt(prompt('1. broj:'))
+br2 = parseInt(prompt('2. broj:'))
+
+if (br1 > br2){
+    console.log('1. broj je veci')
+}
+else if (br2 > br1){
+    console.log('2. broj je veci')
+}
+else {
+    console.log('Brojevi su jednaki')
+}

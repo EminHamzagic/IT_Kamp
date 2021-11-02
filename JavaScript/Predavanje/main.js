@@ -53,16 +53,72 @@
 
 
 
-needed_god = prompt('Unesi broj godina koliko ti treba:')
+// needed_god = prompt('Unesi broj godina koliko ti treba:')
 
-god = prompt('Unesi godine:')
+// god = prompt('Unesi godine:')
 
-if (god > needed_god){
-    console.log('Imas vise nego dovoljno godina')
-}
-else if (god === needed_god){
-    console.log('Imas dovoljno godina')
-}
-else {
-    console.log('Nemas dovoljno godina')
-}
+// if (god > needed_god){
+//     console.log('Imas vise nego dovoljno godina')
+// }
+// else if (god === needed_god){
+//     console.log('Imas dovoljno godina')
+// }
+// else {
+//     console.log('Nemas dovoljno godina')
+// }
+
+
+
+
+// broj = prompt('Unesi broj:')
+
+// if (parseInt(broj) === 20){
+//     alert('Broj je 20 :)')
+// }
+// else {
+//     alert('Broj nije 20 :(')
+// }
+
+
+
+
+// lst_artikala = []
+
+// while(true){
+//     odluka = parseInt(prompt('Za unost artikla (1), Za brisanje zadnjeg artikla (2), za prikaz svih artikala (3):'))
+//     if (odluka === 1){
+//         artikal = prompt('Unesite naziv artikla:')
+//         if (artikal.length > 7){
+//             alert('Naziv artikla je veci od 7 slova, probajte ponovo!')
+//             continue
+//         }
+//         lst_artikala.push(artikal)
+//     }
+//     else if(odluka === 2){
+//         lst_artikala.pop()
+//     }
+//     else if(odluka === 3){
+//         alert(lst_artikala)
+//         break
+//     }
+//     else{
+//         alert('Pogresan unos probajte ponovo!')
+//     }
+// }
+
+
+
+// broj = parseInt(prompt('Uneite neki broj:'))
+
+// if (broj === 0){
+//     alert('Broj je 0')
+// }
+// else if (broj % 2 === 0){
+//     alert('Broj je paran')
+// }
+// else {
+//     alert('Broj je neparan')
+// }
+
+
+

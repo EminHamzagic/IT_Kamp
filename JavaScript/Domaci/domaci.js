@@ -33,9 +33,9 @@
 
 
 
-broj = Math.floor(Math.random() * (20 - 1) + 1)
+broj = Math.floor(Math.random() * (50 - 1) + 1)
 
-// pokusaj = parseInt(prompt('Unesite vrednost za koju verujete da je random broj jednak(od 1 do 5):'))
+// pokusaj = parseInt(prompt('Unesite vrednost za koju verujete da je random broj jednak(od 1 do 20):'))
 
 // if (pokusaj === broj){
 //     alert('Pogodili ste broj!')
@@ -55,7 +55,7 @@ while (true){
     else if (pokusaj > broj){
         br_pokusaja -= 1
         if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, niste pogodili da je broj ' + broj)
+            alert('Ostali ste bez pokusaja, broj je ' + broj)
             break
         }
         alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
@@ -63,7 +63,7 @@ while (true){
     else if(pokusaj < broj){
         br_pokusaja -= 1
         if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, niste pogodili da je broj ' + broj)
+            alert('Ostali ste bez pokusaja, broj je ' + broj)
             break
         }
         alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')

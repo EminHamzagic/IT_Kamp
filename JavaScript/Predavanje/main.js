@@ -165,3 +165,27 @@
 // }
 
 
+
+
+
+// lst = ['Obi-Wan:', 'Hello', 'There', 'General Grievous:', 'General', 'Kenobi', '!']
+
+// for (let i = 0; i < lst.length; i++){
+//     console.log(lst[i])
+// }
+
+
+
+
+start = parseInt(prompt('Unesite vrednost pocetak:'))
+
+end = parseInt(prompt('Unesite vrednost kraja'))
+
+for (i = start; i < end; i++){
+    if (i % 2 === 0){
+        console.log('Broj ' + i + ' je paran')
+    }
+    else {
+        console.log('Broj ' + i + ' je neparan')
+    }
+}

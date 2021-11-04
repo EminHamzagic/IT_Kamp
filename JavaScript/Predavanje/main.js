@@ -124,15 +124,44 @@
 
 
 
-br1 = parseInt(prompt('1. broj:'))
-br2 = parseInt(prompt('2. broj:'))
+// br1 = parseInt(prompt('1. broj:'))
+// br2 = parseInt(prompt('2. broj:'))
 
-if (br1 > br2){
-    console.log('1. broj je veci')
-}
-else if (br2 > br1){
-    console.log('2. broj je veci')
-}
-else {
-    console.log('Brojevi su jednaki')
-}
+// if (br1 > br2){
+//     console.log('1. broj je veci')
+// }
+// else if (br2 > br1){
+//     console.log('2. broj je veci')
+// }
+// else {
+//     console.log('Brojevi su jednaki')
+// }
+
+
+
+
+// dan = prompt()
+// dan = dan.trim()
+
+// dan = dan.replace(' ', '')
+
+// switch(dan.toUpperCase()){
+//     case 'PONEDELJAK': console.log('Danas je ponedeljak')
+//     break
+//     case 'UTORAK': console.log('Danas je utorak')
+//     break
+//     case 'SREDA': console.log('Danas je sreda')
+//     break
+//     case 'CETVRTAK': console.log('Danas je cetvrtak')
+//     break
+//     case 'PETAK': console.log('Danas je petak')
+//     break
+//     case 'SUBOTA': console.log('Danas je subota')
+//     break
+//     case 'NEDELJA': console.log('Danas je nedelja')
+//     break
+//     default: console.log('Pogresan unos!')
+//     break
+// }
+
+

@@ -33,7 +33,7 @@
 
 
 
-broj = Math.floor(Math.random() * (50 - 1) + 1)
+// broj = Math.floor(Math.random() * (50 - 1) + 1)
 
 // pokusaj = parseInt(prompt('Unesite vrednost za koju verujete da je random broj jednak(od 1 do 20):'))
 
@@ -44,28 +44,51 @@ broj = Math.floor(Math.random() * (50 - 1) + 1)
 //     alert('Niste pogodili broj, random broj je bio ' + broj)
 // }
 
-br_pokusaja = 5
+// br_pokusaja = 5
 
-while (true){
-    pokusaj = parseInt(prompt('Unesite neki broj od 1 do 20, imate 5 pokusaja:'))
-    if (pokusaj === broj){
-        alert('Pogodili ste broj!')
-        break
-    }
-    else if (pokusaj > broj){
-        br_pokusaja -= 1
-        if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, broj je ' + broj)
-            break
-        }
-        alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
-    }
-    else if(pokusaj < broj){
-        br_pokusaja -= 1
-        if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, broj je ' + broj)
-            break
-        }
-        alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
-    }
+// while (true){
+//     pokusaj = parseInt(prompt('Unesite neki broj od 1 do 20, imate 5 pokusaja:'))
+//     if (pokusaj === broj){
+//         alert('Pogodili ste broj!')
+//         break
+//     }
+//     else if (pokusaj > broj){
+//         br_pokusaja -= 1
+//         if (br_pokusaja === 0){
+//             alert('Ostali ste bez pokusaja, broj je ' + broj)
+//             break
+//         }
+//         alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+//     }
+//     else if(pokusaj < broj){
+//         br_pokusaja -= 1
+//         if (br_pokusaja === 0){
+//             alert('Ostali ste bez pokusaja, broj je ' + broj)
+//             break
+//         }
+//         alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+//     }
+// }
+
+
+
+
+
+
+start = parseInt(prompt('Unesi pocetak:'))
+
+end = parseInt(prompt('Unesi karj:'))
+
+brojevi = []
+
+zbir = 0
+
+for (let i = start; i < end; i++){
+    brojevi.push(i)
+    zbir += i
 }
+
+alert('Zbir brojeva u zadataom opsegu je ' + zbir)
+
+console.log(brojevi)
+console.log(zbir)

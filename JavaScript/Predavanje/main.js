@@ -177,15 +177,142 @@
 
 
 
-start = parseInt(prompt('Unesite vrednost pocetak:'))
+// start = parseInt(prompt('Unesite vrednost pocetak:'))
 
-end = parseInt(prompt('Unesite vrednost kraja'))
+// end = parseInt(prompt('Unesite vrednost kraja'))
 
-for (i = start; i < end; i++){
-    if (i % 2 === 0){
-        console.log('Broj ' + i + ' je paran')
-    }
-    else {
-        console.log('Broj ' + i + ' je neparan')
-    }
-}
+// for (i = start; i < end; i++){
+//     if (i % 2 === 0){
+//         console.log('Broj ' + i + ' je paran')
+//     }
+//     else {
+//         console.log('Broj ' + i + ' je neparan')
+//     }
+// }
+
+
+
+
+
+// array = []
+
+// duzina = parseInt(prompt('Unesite dzinu niza:'))
+
+// for (i = 0; i < duzina; i++){
+//     array.push(prompt('Unesite ' + (i + 1) + '. element niza:'))
+// }
+
+// for (i = 0; i < array.length; i++){
+//     switch(array[i].toUpperCase()){
+//         case 'BANANA': console.log('Voce je zuto')
+//         break
+//         case 'JABUKA': console.log('Voce je crveno')
+//         break
+//         case 'GROZDJE': console.log('Voce je crno')
+//         break
+//         default: console.log('Boja je nepoznata')
+//         break
+//     }
+// }
+
+
+
+
+
+// array = []
+
+// for (i = 0; i < 5; i++){
+//     element = prompt('Unesi element')
+//     if (element.length > 5){
+//         array.push(element)
+//     }
+//     else {
+//         alert('String je premali')
+//     }
+// }
+
+// console.log(array)
+
+
+
+
+// cars = ['Toyota', 'BMW', 'MErcedes', 'Audi', 'Lamborgini']
+
+// for (x of cars){
+//     console.log(x)
+// }
+
+
+
+
+// duzina = parseInt(prompt('Unesite duzinu niza:'))
+
+// array = []
+
+// for (i = 0; i < duzina; i++){
+//     array.push(parseInt(prompt('Unesite ' + (i + 1) + '. clan niza:')))
+// }
+
+// max = array[0]
+
+// for (i = 0; i < duzina; i++){
+//     if (array[i] > max){
+//         max = array[i]
+//     }
+// }
+
+// alert('Najveci broj unetog niza je ' + max)
+// console.log(max)
+
+
+
+
+
+// size = parseInt(prompt('Unesite velicinu:'))
+
+// line = ''
+
+// for (i = 0; i < size; i++){
+//     for (j = 0; j < i + 1; j++){
+//         // line = ''
+//         line += '* '
+//     }
+//     console.log(line)
+//     line = ''
+// }
+
+
+
+
+// function func1(){
+//     str1 = document.getElementById('txtbox').value
+//     console.log(str1)
+// }
+
+
+
+// for (i = 5; i > 0; i--){
+//     console.log(i)
+// }
+
+
+
+
+// str = prompt('Unesi nesto')
+
+// new_str = ''
+
+// for (i = str.length - 1; i >= 0; i--){
+//     new_str += str[i]
+// }
+
+// console.log(new_str)
+
+
+
+
+br1 = parseInt(prompt('Unesite deljenik:'))
+
+br2 = parseInt(prompt('Unesite delilac:'))
+
+console.log(Boolean(br1 % br2 === 0))

@@ -75,20 +75,47 @@
 
 
 
-start = parseInt(prompt('Unesi pocetak:'))
+// start = parseInt(prompt('Unesi pocetak:'))
 
-end = parseInt(prompt('Unesi karj:'))
+// end = parseInt(prompt('Unesi karj:'))
 
-brojevi = []
+// brojevi = []
 
-zbir = 0
+// zbir = 0
 
-for (let i = start; i < end; i++){
-    brojevi.push(i)
-    zbir += i
-}
+// for (let i = start; i < end; i++){
+//     brojevi.push(i)
+//     zbir += i
+// }
 
-alert('Zbir brojeva u zadataom opsegu je ' + zbir)
+// alert('Zbir brojeva u zadataom opsegu je ' + zbir)
 
-console.log(brojevi)
-console.log(zbir)
+// console.log(brojevi)
+// console.log(zbir)
+
+
+
+
+
+
+
+// start = parseInt(prompt('Unesi pocetak:'))
+
+// end = parseInt(prompt('Unesi karj:'))
+
+// brojevi = []
+
+// for (let i = start; i <= end; i++){
+//     brojevi.push(i)
+// }
+
+// for (i = 0; i < brojevi.length; i++){
+//     if (brojevi[i] % 2 === 0){
+//         brojevi[i] = 'paran'
+//     }
+//     else{
+//         brojevi[i] = 'neparan'
+//     }
+// }
+
+// console.log(brojevi)

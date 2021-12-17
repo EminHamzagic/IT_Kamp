@@ -311,8 +311,40 @@
 
 
 
-br1 = parseInt(prompt('Unesite deljenik:'))
+// br1 = parseInt(prompt('Unesite deljenik:'))
 
-br2 = parseInt(prompt('Unesite delilac:'))
+// br2 = parseInt(prompt('Unesite delilac:'))
 
-console.log(Boolean(br1 % br2 === 0))
+// console.log(Boolean(br1 % br2 === 0))
+
+
+
+
+
+broj = Math.floor(Math.random() * (20 - 1) + 1)
+
+br_pokusaja = 5
+
+while (true){
+    pokusaj = parseInt(prompt('Unesite neki broj od 1 do 20, imate ' + br_pokusaja + ' pokusaja:'))
+    if (pokusaj === broj){
+        alert('Pogodili ste broj!')
+        break
+    }
+    else if (pokusaj > broj){
+        br_pokusaja -= 1
+        if (br_pokusaja === 0){
+            alert('Ostali ste bez pokusaja, broj je ' + broj)
+            break
+        }
+        alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+    }
+    else if(pokusaj < broj){
+        br_pokusaja -= 1
+        if (br_pokusaja === 0){
+            alert('Ostali ste bez pokusaja, broj je ' + broj)
+            break
+        }
+        alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+    }
+}

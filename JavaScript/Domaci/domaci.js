@@ -119,3 +119,35 @@
 // }
 
 // console.log(brojevi)
+
+
+
+
+// start = parseInt(prompt('Unesi pocetak:'))
+
+// end = parseInt(prompt('Unesi karj:'))
+
+// brojevi = []
+
+// zbir = 0
+
+// brojac = 0
+
+// for (let i = start; i < end + 1; i++){
+//     brojevi.push(i)
+//     zbir += i
+//     brojac += 1
+// }
+
+// alert('Aritmeticka sredina brojeva u zadataom opsegu je ' + (zbir / brojac))
+
+// console.log(brojevi)
+// console.log(zbir)
+
+
+
+str = 'Hello'
+
+a = str.substr(0, str.length - 1)
+
+console.log(a)

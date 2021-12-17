@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div class="container">
+        <input maxlength="18" id="box" type="text">
+        <button class="box_btn" onclick="backspace()"><i class="fas fa-backspace"></i></button>
+        <div class="buttons_container">
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button onclick="addition()" id="addition">+</button>
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onload="subtraction()" id="subtraction">-</button>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button onclick="multiplication()" id="multiplication">*</button>
+            <button onclick="notch()">,</button>
+            <button onclick="zero()">0</button>
+            <button onclick="equals()" id="equals">=</button>
+            <button onclick="division()" id="division">/</button>
+        </div>
+    </div>
+</body>
+</html>

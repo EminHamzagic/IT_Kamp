@@ -72,3 +72,17 @@
 // console.log(isPrime(27));
 
 
+function canalMania(lowQueue, highQueue, lockLength) {
+    var time = 0;
+    var queue = 1;
+    while(true){
+        if (queue % 2 === 0){
+            
+        }
+        else{
+
+        }
+    }
+}
+
+console.log([2, 3, 6, 1], [1, 2], 7);

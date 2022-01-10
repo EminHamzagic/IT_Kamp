@@ -128,3 +128,40 @@
 
 
 
+
+
+function Snail(mat){
+    x = mat[0].length;
+    y = mat.length;
+    var trail = []
+    let x1 = 0, y1 = 0;
+    while (x1 < x && y1 < y) {
+        for (let i = y1; i < y; i++){
+            trail.push(mat[x1][i]);
+        }
+        x1++;
+        for (let i = x1; i < x; i++){
+            trail.push(mat[i][y - 1])
+        }
+        y--;
+        if (x1 < x){
+            for (i = y - 1; i >= y1; --i){
+                trail.push(mat[x - 1][i])
+            }
+        }
+        x--;
+        if (y1 < y){
+            for (i = x - 1; i >= x1; i--){
+                trail.push(mat[i][y1])
+            }
+        }
+        y1++;
+    }
+    console.log(trail);
+}
+
+Snail([[1, 2, 3, 4, 5],
+       [6, 7, 8, 9, 10],
+       [11, 12, 13, 14, 15], 
+       [16, 17, 18, 19, 20], 
+       [21, 22, 23, 24, 25]])

@@ -72,17 +72,59 @@
 // console.log(isPrime(27));
 
 
-function canalMania(lowQueue, highQueue, lockLength) {
-    var time = 0;
-    var queue = 1;
-    while(true){
-        if (queue % 2 === 0){
+
+
+//Nije Zavrseno
+// function canalMania(lowQueue, highQueue, lockLength) {
+//     var time = 0;
+//     var queue = 1;
+//     while(true){
+//         if (queue % 2 === 0){
             
-        }
-        else{
+//         }
+//         else{
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-console.log([2, 3, 6, 1], [1, 2], 7);
+// console.log([2, 3, 6, 1], [1, 2], 7);
+
+
+
+
+
+
+// function paul(x){
+//     var misery_score = 0
+//     for (let el of x){
+//         switch(el){
+//             case 'life': misery_score += 0;
+//             break;
+//             case 'Petes kata': misery_score += 10;
+//             break;
+//             case 'kata': misery_score += 5;
+//             break;
+//             case 'eating': misery_score += 1;
+//             break
+//         }
+//     }
+//     if (misery_score < 40){
+//         return 'Super happy!';
+//     }
+//     else if (misery_score >= 40 && misery_score < 70){
+//         return 'Happy!';
+//     }
+//     else if (misery_score >= 70 && misery_score < 100){
+//         return 'Sad!';
+//     }
+//     else if (misery_score > 100){
+//         return 'Miserable!';
+//     }
+// }
+
+// console.log(paul(['Petes kata', 'Petes kata', 'eating', 'Petes kata', 'Petes kata', 'eating']));
+
+
+
+

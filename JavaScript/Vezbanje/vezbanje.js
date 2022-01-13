@@ -130,38 +130,71 @@
 
 
 
-function Snail(mat){
-    x = mat[0].length;
-    y = mat.length;
-    var trail = []
-    let x1 = 0, y1 = 0;
-    while (x1 < x && y1 < y) {
-        for (let i = y1; i < y; i++){
-            trail.push(mat[x1][i]);
+// function Snail(mat){
+//     x = mat[0].length;
+//     y = mat.length;
+//     var trail = []
+//     let x1 = 0, y1 = 0;
+//     while (x1 < x && y1 < y) {
+//         for (let i = y1; i < y; i++){
+//             trail.push(mat[x1][i]);
+//         }
+//         x1++;
+//         for (let i = x1; i < x; i++){
+//             trail.push(mat[i][y - 1])
+//         }
+//         y--;
+//         if (x1 < x){
+//             for (i = y - 1; i >= y1; --i){
+//                 trail.push(mat[x - 1][i])
+//             }
+//         }
+//         x--;
+//         if (y1 < y){
+//             for (i = x - 1; i >= x1; i--){
+//                 trail.push(mat[i][y1])
+//             }
+//         }
+//         y1++;
+//     }
+//     console.log(trail);
+// }
+
+// Snail([[1, 2, 3, 4, 5],
+//        [6, 7, 8, 9, 10],
+//        [11, 12, 13, 14, 15], 
+//        [16, 17, 18, 19, 20], 
+//        [21, 22, 23, 24, 25]])
+
+
+
+
+
+
+
+
+function solution(str){
+    var start = 0;
+    var end = 2;
+    char_lst = []
+    if (str.length % 2 === 0){
+        for(let i = 0; i < str.length / 2; i++){
+            char_lst.push(str.slice(start, end));
+            start += 2;
+            end += 2;
         }
-        x1++;
-        for (let i = x1; i < x; i++){
-            trail.push(mat[i][y - 1])
-        }
-        y--;
-        if (x1 < x){
-            for (i = y - 1; i >= y1; --i){
-                trail.push(mat[x - 1][i])
-            }
-        }
-        x--;
-        if (y1 < y){
-            for (i = x - 1; i >= x1; i--){
-                trail.push(mat[i][y1])
-            }
-        }
-        y1++;
+        return char_lst
     }
-    console.log(trail);
+    else {
+        for(let i = 0; i < str.length / 2 - 1; i++){
+            char_lst.push(str.slice(start, end));
+            start += 2;
+            end += 2;
+        }
+        char_lst.push(str[str.length - 1] + '_');
+        return char_lst
+    }
 }
 
-Snail([[1, 2, 3, 4, 5],
-       [6, 7, 8, 9, 10],
-       [11, 12, 13, 14, 15], 
-       [16, 17, 18, 19, 20], 
-       [21, 22, 23, 24, 25]])
+console.log(solution("abcdef"));
+console.log(solution("abcde"));

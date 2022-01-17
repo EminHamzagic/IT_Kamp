@@ -173,28 +173,61 @@
 
 
 
-function solution(str){
-    var start = 0;
-    var end = 2;
-    char_lst = []
-    if (str.length % 2 === 0){
-        for(let i = 0; i < str.length / 2; i++){
-            char_lst.push(str.slice(start, end));
-            start += 2;
-            end += 2;
+// function solution(str){
+//     var start = 0;
+//     var end = 2;
+//     char_lst = []
+//     if (str.length % 2 === 0){
+//         for(let i = 0; i < str.length / 2; i++){
+//             char_lst.push(str.slice(start, end));
+//             start += 2;
+//             end += 2;
+//         }
+//         return char_lst
+//     }
+//     else {
+//         for(let i = 0; i < str.length / 2 - 1; i++){
+//             char_lst.push(str.slice(start, end));
+//             start += 2;
+//             end += 2;
+//         }
+//         char_lst.push(str[str.length - 1] + '_');
+//         return char_lst
+//     }
+// }
+
+// console.log(solution("abcdef"));
+// console.log(solution("abcde"));
+
+
+
+
+
+
+function changer(str) {
+    new_str = '';
+    new_char = '';
+    for (let i = 0; i < str.length; i++){
+        if(Number(str[i]) || str[i] == 0){
+            new_str += str[i];
         }
-        return char_lst
-    }
-    else {
-        for(let i = 0; i < str.length / 2 - 1; i++){
-            char_lst.push(str.slice(start, end));
-            start += 2;
-            end += 2;
+        else {
+            if(str[i] == 'z' || str[i] == 'Z'){
+                new_char = 'a';
+            }
+            else{
+                new_char = String.fromCharCode(str.charCodeAt(i) + 1);
+            }
+            if (new_char == 'a' || new_char == 'A' || new_char == 'e' || new_char == 'E' || new_char == 'i' || new_char == 'I' || new_char == 'o' || new_char == 'O' || new_char == 'U' || new_char == 'u'){
+                new_char = new_char.toUpperCase();
+            }
+            else {
+                new_char = new_char.toLowerCase();
+            }
+            new_str += new_char;
         }
-        char_lst.push(str[str.length - 1] + '_');
-        return char_lst
     }
+    return new_str;
 }
 
-console.log(solution("abcdef"));
-console.log(solution("abcde"));
+console.log(changer('Cat30'));

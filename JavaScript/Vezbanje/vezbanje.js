@@ -204,30 +204,59 @@
 
 
 
-function changer(str) {
-    new_str = '';
-    new_char = '';
-    for (let i = 0; i < str.length; i++){
-        if(Number(str[i]) || str[i] == 0){
-            new_str += str[i];
-        }
-        else {
-            if(str[i] == 'z' || str[i] == 'Z'){
-                new_char = 'a';
-            }
-            else{
-                new_char = String.fromCharCode(str.charCodeAt(i) + 1);
-            }
-            if (new_char == 'a' || new_char == 'A' || new_char == 'e' || new_char == 'E' || new_char == 'i' || new_char == 'I' || new_char == 'o' || new_char == 'O' || new_char == 'U' || new_char == 'u'){
-                new_char = new_char.toUpperCase();
-            }
-            else {
-                new_char = new_char.toLowerCase();
-            }
-            new_str += new_char;
-        }
-    }
-    return new_str;
+// function changer(str) {
+//     new_str = '';
+//     new_char = '';
+//     for (let i = 0; i < str.length; i++){
+//         if(Number(str[i]) || str[i] == 0){
+//             new_str += str[i];
+//         }
+//         else {
+//             if(str[i] == 'z' || str[i] == 'Z'){
+//                 new_char = 'a';
+//             }
+//             else{
+//                 new_char = String.fromCharCode(str.charCodeAt(i) + 1);
+//             }
+//             if (new_char == 'a' || new_char == 'A' || new_char == 'e' || new_char == 'E' || new_char == 'i' || new_char == 'I' || new_char == 'o' || new_char == 'O' || new_char == 'U' || new_char == 'u'){
+//                 new_char = new_char.toUpperCase();
+//             }
+//             else {
+//                 new_char = new_char.toLowerCase();
+//             }
+//             new_str += new_char;
+//         }
+//     }
+//     return new_str;
+// }
+
+// console.log(changer('Cat30'));
+
+
+
+function humanReadable (seconds) {
+    // if (seconds < 60){
+    //     return '00:00:' + seconds;
+    // }
+    // else {
+    //     let mins = Math.floor(seconds / 60);
+    //     let hours = 0;
+    //     // return mins
+    //     if (mins < 59){
+    //         if 
+    //         return hours + ':' + mins + ':' + (seconds - mins * 60);
+    //     }
+    //     // return time
+    // }
+    let mins = Math.floor(seconds / 60);
+    let hours = Math.floor(mins / 60);
+    seconds = seconds - mins * 60;
+    mins = mins - hours * 60;
+    if (seconds < 10) seconds = '0' + seconds;
+    if (mins < 10) mins = '0' + mins;
+    if (hours < 10) hours = '0' + hours;
+    // console.log(seconds, mins, hours);
+    return hours + ':' + mins + ':' + seconds;
 }
 
-console.log(changer('Cat30'));
+console.log(humanReadable(3600));

@@ -234,29 +234,48 @@
 
 
 
-function humanReadable (seconds) {
-    // if (seconds < 60){
-    //     return '00:00:' + seconds;
-    // }
-    // else {
-    //     let mins = Math.floor(seconds / 60);
-    //     let hours = 0;
-    //     // return mins
-    //     if (mins < 59){
-    //         if 
-    //         return hours + ':' + mins + ':' + (seconds - mins * 60);
-    //     }
-    //     // return time
-    // }
-    let mins = Math.floor(seconds / 60);
-    let hours = Math.floor(mins / 60);
-    seconds = seconds - mins * 60;
-    mins = mins - hours * 60;
-    if (seconds < 10) seconds = '0' + seconds;
-    if (mins < 10) mins = '0' + mins;
-    if (hours < 10) hours = '0' + hours;
-    // console.log(seconds, mins, hours);
-    return hours + ':' + mins + ':' + seconds;
-}
+// function humanReadable (seconds) {
+//     let mins = Math.floor(seconds / 60);
+//     let hours = Math.floor(mins / 60);
+//     seconds = seconds - mins * 60;
+//     mins = mins - hours * 60;
+//     if (seconds < 10) seconds = '0' + seconds;
+//     if (mins < 10) mins = '0' + mins;
+//     if (hours < 10) hours = '0' + hours;
+//     return hours + ':' + mins + ':' + seconds;
+// }
 
-console.log(humanReadable(3600));
+// console.log(humanReadable(3600));
+
+
+
+
+var moveZeros = function (arr) {
+    // zeros = 0
+    // arr = arr.filter((item) => {
+    //     if (item === 0 && typeof(item) === typeof(1)){
+    //         zeros++
+    //     }
+    //     else {
+    //         return item
+    //     }
+    // })
+    // for (let i = 0; i < zeros; i ++){
+    //     arr.push(0);
+    // }
+    // return arr
+    let index = 0;
+    while (true){
+        if (arr[index] == 0){
+            arr.splice(index, index);
+            index++;
+            continue;
+        }
+        else if (index === arr.length){
+            return arr;
+        }
+    }
+}
+ar = [1, 2, false, null, 1]
+console.log(ar.toString());
+// console.log(moveZeros([1,2,0,1,0,1,false,0,3,0,1]));

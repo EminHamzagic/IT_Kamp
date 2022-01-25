@@ -250,32 +250,51 @@
 
 
 
-var moveZeros = function (arr) {
-    // zeros = 0
-    // arr = arr.filter((item) => {
-    //     if (item === 0 && typeof(item) === typeof(1)){
-    //         zeros++
-    //     }
-    //     else {
-    //         return item
-    //     }
-    // })
-    // for (let i = 0; i < zeros; i ++){
-    //     arr.push(0);
-    // }
-    // return arr
-    let index = 0;
-    while (true){
-        if (arr[index] == 0){
-            arr.splice(index, index);
-            index++;
-            continue;
-        }
-        else if (index === arr.length){
-            return arr;
+// var moveZeros = function (arr) {
+//     // zeros = 0
+//     // arr = arr.filter((item) => {
+//     //     if (item === 0 && typeof(item) === typeof(1)){
+//     //         zeros++
+//     //     }
+//     //     else {
+//     //         return item
+//     //     }
+//     // })
+//     // for (let i = 0; i < zeros; i ++){
+//     //     arr.push(0);
+//     // }
+//     // return arr
+//     let index = 0;
+//     while (true){
+//         if (arr[index] == 0){
+//             arr.splice(index, index);
+//             index++;
+//             continue;
+//         }
+//         else if (index === arr.length){
+//             return arr;
+//         }
+//     }
+// }
+// ar = [1, 2, false, null, 1]
+// console.log(ar.toString());
+// // console.log(moveZeros([1,2,0,1,0,1,false,0,3,0,1]));
+
+
+
+function Sredi(s){
+    arr = s.split(' ');
+    new_arr = []
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] !== arr[i + 1]){
+            new_arr.push(arr[i])
         }
     }
+    str = '';
+    for (let item of new_arr){
+        str += item + ' ';
+    }
+    return str.trim();
 }
-ar = [1, 2, false, null, 1]
-console.log(ar.toString());
-// console.log(moveZeros([1,2,0,1,0,1,false,0,3,0,1]));
+
+console.log(Sredi('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));

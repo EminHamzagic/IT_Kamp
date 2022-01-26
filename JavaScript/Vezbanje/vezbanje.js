@@ -282,19 +282,102 @@
 
 
 
-function Sredi(s){
-    arr = s.split(' ');
-    new_arr = []
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] !== arr[i + 1]){
-            new_arr.push(arr[i])
+// function Sredi(s){
+//     arr = s.split(' ');
+//     new_arr = []
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] !== arr[i + 1]){
+//             new_arr.push(arr[i])
+//         }
+//     }
+//     str = '';
+//     for (let item of new_arr){
+//         str += item + ' ';
+//     }
+//     return str.trim();
+// }
+
+// console.log(Sredi('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
+
+
+
+
+
+
+// function proba(s){
+//     if (s){
+//         return 'nice'
+//     }
+//     else{
+//         return +5;
+//     }
+// }
+
+// console.log(proba());
+// function five(state){
+//     if (state){
+//         switch(state[0]){
+//             case '+': return 5 + parseInt(state[1]);
+//             case '-': return 5 - parseInt(state[1]);
+//             case '*': return 5 * parseInt(state[1]);
+//             case '/': return 5 / parseInt(state[1]);
+//         }
+//     }
+//     else {
+//         return 5;
+//     }
+// }
+
+// function plus(num){
+//     return '+' + num;
+// }
+
+// function one(state){
+//     if (state){
+//         switch(state[0]){
+//             case '+': return 1 + parseInt(state[1]);
+//         }
+//     }
+//     else {
+//         return 1;
+//     }
+// }
+
+// console.log(five(plus(one())));
+
+
+
+
+
+function same(array1, array2){
+    if (array1 && array2 && array1.length >= 1 && array2.length >= 1){
+        for (let j = 0; j < array1.length; j++){
+            console.log(array1[j]);
+            if (array2.includes(array1[j] ** 2)){
+                // array2.splice(array2.indexOf(el ** 2), array2.indexOf(el ** 2));
+                // for (let i = 0; i < array2.length; i++){
+                //     if (array2[i] === array1[j] ** 2){
+                //         // array2.splice(i, i);
+                //     }
+                // }
+                // console.log(array2);
+                console.log(array2.indexOf(array1[j] ** 2));
+                delete array2[array2.indexOf(array1[j] ** 2)];
+                // console.log(array2);
+                continue;
+            }
+            else {
+                return false;
+            }
         }
+        return true;
     }
-    str = '';
-    for (let item of new_arr){
-        str += item + ' ';
+    else {
+        return false;
     }
-    return str.trim();
 }
 
-console.log(Sredi('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
+a1 = [3, 6, 2, 2, 8, 1, 0, 9, 1, 0, 6, 0, 10, 6, 9, 2, 6, 8, 10, 8, 10];
+a2 = [64, 1, 1, 64, 64, 0, 36, 37, 0, 100, 0, 81, 9, 36, 4, 4, 36, 81, 100, 100, 4]
+// a2 = []
+console.log(same(a1, a2));

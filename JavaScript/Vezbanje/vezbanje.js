@@ -386,18 +386,18 @@
 
 
 
-// function order(words){
-//     word_arr = words.split(' ');
-//     let sentence = '';
-//     for (let i = 0; i < word_arr.length; i++){
-//         for (let word of word_arr){
-//             if (word.includes(i + 1)){
-//                 sentence += word + ' ';
-//                 break;
-//             }
-//         }
-//     }
-//     return sentence.trim();
-// }
+function order(words){
+    word_arr = words.split(' ');
+    let sentence = '';
+    for (let i = 0; i < word_arr.length; i++){
+        for (let word of word_arr){
+            if (word.includes(i + 1)){
+                sentence += word + ' ';
+                break;
+            }
+        }
+    }
+    return sentence.trim();
+}
 
-// console.log(order("is2 Thi1s T4est 3a"));
+console.log(order("is2 Thi1s T4est 3a"));

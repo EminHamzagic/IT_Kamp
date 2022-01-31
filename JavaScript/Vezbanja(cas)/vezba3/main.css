@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 250px;
+    height: 8rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.color{
+    background-color: blue;
+}

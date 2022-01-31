@@ -12,13 +12,18 @@ var word = document.getElementById('lorem');
 var word_list = word.innerText.split(' ');
 var new_s = '';
 
-for (let el of word_list){
-    if (el.length > 10){
-        new_s += el.toUpperCase() + ' ';
-    }
-    else{
-        new_s += el + ' ';
-    }
-}
+// for (let el of word_list){
+//     if (el.length > 10){
+//         new_s += el.toUpperCase() + ' ';
+//     }
+//     else{
+//         new_s += el + ' ';
+//     }
+// }
+
+word_list = word_list.map((el) => {
+    if (el.length > 10) el = el.toUpperCase();
+    new_s += el + ' ';
+})
 
 word.innerText = new_s;

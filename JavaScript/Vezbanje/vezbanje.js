@@ -386,18 +386,60 @@
 
 
 
-function order(words){
-    word_arr = words.split(' ');
-    let sentence = '';
-    for (let i = 0; i < word_arr.length; i++){
-        for (let word of word_arr){
-            if (word.includes(i + 1)){
-                sentence += word + ' ';
-                break;
-            }
-        }
-    }
-    return sentence.trim();
-}
+// function order(words){
+//     word_arr = words.split(' ');
+//     let sentence = '';
+//     for (let i = 0; i < word_arr.length; i++){
+//         for (let word of word_arr){
+//             if (word.includes(i + 1)){
+//                 sentence += word + ' ';
+//                 break;
+//             }
+//         }
+//     }
+//     return sentence.trim();
+// }
 
-console.log(order("is2 Thi1s T4est 3a"));
+// console.log(order("is2 Thi1s T4est 3a"));
+
+
+
+
+
+
+// function score( dice ) {
+//     // dice.sort((a, b) => {
+//     //     return a - b;
+//     // })
+//     var score = 0;
+//     var rolls = [0, 0, 0, 0, 0, 0];
+//     for (let el of dice){
+//         rolls[el - 1] += 1;
+//     }
+//     for (let i = 0; i < rolls.length; i++){
+//         if (rolls[i] >= 3){
+//             rolls[i] -= 3;
+//             if (i === 0){
+//                 score += (i + 1) * 1000;
+//             }
+//             else{
+//                 score += (i + 1) * 100;
+//             }
+//         }
+//         if (i === 0 && rolls[i] > 0){
+//             score += rolls[i] * 100;
+//             rolls[i] = 0;
+//         }
+//         else if (i === 4 && rolls[i] > 0){
+//             score += rolls[i] * 50;
+//             rolls[i] = 0;
+//         }
+//     }
+//     return score;
+// }
+
+// console.log(score([2, 4, 4, 5, 4]));
+
+
+
+

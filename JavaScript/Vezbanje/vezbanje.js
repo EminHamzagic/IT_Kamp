@@ -443,3 +443,47 @@
 
 
 
+function zeros (n) {
+    var multipliers = [];
+    var zeros = 0;
+    for (let i = n; i > 0; i--){
+        multipliers.push(i);
+    }
+    if (multipliers.length < 5){
+        return 0;
+    }
+    else if (multipliers.length < 6){
+        return 1;
+    }
+    else{
+        multipliers = multipliers.filter((el) => {
+            if (el % 5 === 0) return el;
+        })
+    }
+    multipliers.sort((a, b) => {
+        return a - b;
+    })
+    for (let el of multipliers){
+        if (el % 25 === 0){
+            if ((el / 25) % 5 === 0){
+                new_el = el / 25
+                while(true){
+                    if (new_el % 5 === 0){
+                        zeros += 2;
+                        new_el /= 5;
+                    }
+                    else{
+                        break;
+                    }
+                }
+            }
+            // zeros += 2;
+        }
+        else{
+            zeros += 1;
+        }
+    }
+    return zeros
+}
+
+console.log(zeros(1000))

@@ -443,47 +443,196 @@
 
 
 
-function zeros (n) {
-    var multipliers = [];
-    var zeros = 0;
-    for (let i = n; i > 0; i--){
-        multipliers.push(i);
-    }
-    if (multipliers.length < 5){
-        return 0;
-    }
-    else if (multipliers.length < 6){
-        return 1;
-    }
-    else{
-        multipliers = multipliers.filter((el) => {
-            if (el % 5 === 0) return el;
-        })
-    }
-    multipliers.sort((a, b) => {
-        return a - b;
-    })
-    for (let el of multipliers){
-        if (el % 25 === 0){
-            if ((el / 25) % 5 === 0){
-                new_el = el / 25
-                while(true){
-                    if (new_el % 5 === 0){
-                        zeros += 2;
-                        new_el /= 5;
-                    }
-                    else{
-                        break;
-                    }
-                }
-            }
-            // zeros += 2;
-        }
-        else{
-            zeros += 1;
-        }
-    }
-    return zeros
-}
+// function zeros (n) {
+//     var multipliers = [];
+//     var zeros = 0;
+//     for (let i = n; i > 0; i--){
+//         multipliers.push(i);
+//     }
+//     if (multipliers.length < 5){
+//         return 0;
+//     }
+//     else if (multipliers.length < 6){
+//         return 1;
+//     }
+//     else{
+//         multipliers = multipliers.filter((el) => {
+//             if (el % 5 === 0) return el;
+//         })
+//     }
+//     multipliers.sort((a, b) => {
+//         return a - b;
+//     })
+//     for (let el of multipliers){
+//         if (el % 25 === 0){
+//             if ((el / 25) % 5 === 0){
+//                 new_el = el / 25
+//                 while(true){
+//                     if (new_el % 5 === 0){
+//                         zeros += 2;
+//                         new_el /= 5;
+//                     }
+//                     else{
+//                         break;
+//                     }
+//                 }
+//             }
+//             // zeros += 2;
+//         }
+//         else{
+//             zeros += 1;
+//         }
+//     }
+//     return zeros
+// }
 
-console.log(zeros(1000))
+// console.log(zeros(1000))
+
+
+
+
+
+txt = 
+`
+bdhpF,82QsLirJejtNmzZKgnB3SwTyXG ?.6YIcflxVC5WE94UA1OoD70MkvRuPqHa!
+dp,2siJjNzKn3wyG?6IfxCW9U1o7Mvuqadp,2siJjNzKn3wyG?6IfxCW9U1o7Mvuqa!
+h,QieNZnSy 6cx59Ao0vPah,QieNZnSy 6cx59Ao0vPah,QieNZnSy 6cx59Ao0vPa!
+p2ijznwG6fC917vqd,sJNK3y?IxWUoMuap2ijznwG6fC917vqd,sJNK3y?IxWUoMua!
+FsezBy.f5UDvHpQJmnT?cC4okqh2rNgw IV9OMPd8itKSGYxE10ub,LjZ3X6lWA7Ra!
+,iNny6x9ova,iNny6x9ova,iNny6x9ova,iNny6x9ova,iNny6x9ova,iNny6x9ova!
+8JZw.x47PpLNBGcWOvb2eKT6VU0qFim3 fEoRdQjgyYCAMH,rzS?l9DuhstnXI51ka!
+2jnGf97q,JKyIWoupizw6C1vdsN3?xUMa2jnGf97q,JKyIWoupizw6C1vdsN3?xUMa!
+QNS65oP,en xAvhiZyc90aQNS65oP,en xAvhiZyc90aQNS65oP,en xAvhiZyc90a!
+szyfUvpJn?Coq2NwI9MdiKGx1u,j36W7aszyfUvpJn?Coq2NwI9MdiKGx1u,j36W7a!
+LK CDaLK CDaLK CDaLK CDaLK CDaLK CDaLK CDaLK CDaLK CDaLK CDaLK CDa!
+in69v,Nyxoain69v,Nyxoain69v,Nyxoain69v,Nyxoain69v,Nyxoain69v,Nyxoa!
+r3c1HiBIAqLnYUPsg64uQK.9R2Z?Ev8z Wk,mG5MFNXC0ptyV7hjTxDdewlobJSfOa!
+Jwx7pNGWv2K6Uqi3fodjyCM,z?9usnI1aJwx7pNGWv2K6Uqi3fodjyCM,z?9usnI1a!
+ey5vQncohN 9PiSx0,Z6Aaey5vQncohN 9PiSx0,Z6Aaey5vQncohN 9PiSx0,Z6Aa!
+jG9qJyWuiwCvs3xM2nf7,KIopz61dN?UajG9qJyWuiwCvs3xM2nf7,KIopz61dN?Ua!
+t?Adm6OpZID,gf02BxksSCRiTWPJX9Hj UbN.1hzYoFKc78nlMQ3VvLw5uryEqeG4a!
+N6o,nxviy9aN6o,nxviy9aN6o,nxviy9aN6o,nxviy9aN6o,nxviy9aN6o,nxviy9a!
+mI0sT9bzcMLy4dZfkiXUhKlvrGApgxRJ 1FnVue?O,BCPj.o835qt6D2SWHNY7QwEa!
+zfvJ?o2w9dKxuj67syUpnCqNIMiG1,3WazfvJ?o2w9dKxuj67syUpnCqNIMiG1,3Wa!
+ZxPNcve60i oQyA,S9hn5aZxPNcve60i oQyA,S9hn5aZxPNcve60i oQyA,S9hn5a!
+KCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCaKCa!
+gWh34,T1QGDi.MeIRNlqZCbnEpSU8yOs 7r6kjcumxHK5dB9FwA2XoL?0JYvtfPzVa!
+n9,yoi6vNxan9,yoi6vNxan9,yoi6vNxan9,yoi6vNxan9,yoi6vNxan9,yoi6vNxa!
+BUQ?kNVdS1L6Rz5pTorIPKE,X7efHn42 Mtxb3As.vmChwOiYuZWFyDJcqg98G0jla!
+31iIqnUs6uK92?vzW,GMNCpy7jxdwoJfa31iIqnUs6uK92?vzW,GMNCpy7jxdwoJfa!
+Soexhy0N5, vZ9Q6PnAicaSoexhy0N5, vZ9Q6PnAicaSoexhy0N5, vZ9Q6PnAica!
+w7NW26q3ojC,?un1JxpGvKUifdyMz9sIaw7NW26q3ojC,?un1JxpGvKUifdyMz9sIa!
+TMZUrxF?P3DNEscdXvg1eC86Hw0z4ilp uBotWQIbykKAJV,.qS7m9LfhGRnOj52Ya!
+yvnoN9ix,6ayvnoN9ix,6ayvnoN9ix,6ayvnoN9ix,6ayvnoN9ix,6ayvnoN9ix,6a!
+XuSMgomUeWLx8Ih?HyR30KON4J5sl,Yd qTvB7Z1t9rCQfF6bGPwknDzAjEiV2cp.a!
+Gqyuwv3Mn7Koz1NUj9JWiCsx2f,Ip6d?aGqyuwv3Mn7Koz1NUj9JWiCsx2f,Ip6d?a!
+ a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a!
+?d6pI,f2xsCiWJ9jUN1zoK7nM3vwuyqGa?d6pI,f2xsCiWJ9jUN1zoK7nM3vwuyqGa!
+.pc2ViEjAzDnkwPGb6FfQCr9t1Z7BvTq dY,ls5J4NOK03RyH?hI8xLWeUmogMSuXa!
+6,xi9Nonvya6,xi9Nonvya6,xi9Nonvya6,xi9Nonvya6,xi9Nonvya6,xi9Nonvya!
+Y25jOnRGhfL9m7Sq.,VJAKkybIQWtoBu pli4z0wH68Ce1gvXdcsEND3P?FxrUZMTa!
+Is9zMydfiUKvGpxJ1nu?,Cjo3q62WN7waIs9zMydfiUKvGpxJ1nu?,Cjo3q62WN7wa!
+ciAnP6Q9Zv ,5N0yhxeoSaciAnP6Q9Zv ,5N0yhxeoSaciAnP6Q9Zv ,5N0yhxeoSa!
+fJowdxj7ypCNMG,Wzv?29Ku6sUnqIi13afJowdxj7ypCNMG,Wzv?29Ku6sUnqIi13a!
+lj0G89gqcJDyFWZuYiOwhCmv.sA3bxtM 24nHfe7X,EKPIroTp5zR6L1SdVNk?QUBa!
+xNv6ioy,9naxNv6ioy,9naxNv6ioy,9naxNv6ioy,9naxNv6ioy,9naxNv6ioy,9na!
+VzPftvYJ0?LoX2AwF9Bd5KHxmucjk6r7 sOy8USpEnbCZqlNRIeM.iDGQ1T,43hWga!
+CKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKaCKa!
+5nh9S,AyQo i06evcNPxZa5nh9S,AyQo i06evcNPxZa5nh9S,AyQo i06evcNPxZa!
+W3,1GiMINqCnpUys76juxKd9w2o?JvfzaW3,1GiMINqCnpUys76juxKd9w2o?Jvfza!
+EwQ7YNHWS2D6tq538o.jPCB,O?euVnF1 JRxgpAGrvlKhUXikfZd4yLMczb9Ts0Ima!
+9yivxn,o6Na9yivxn,o6Na9yivxn,o6Na9yivxn,o6Na9yivxn,o6Na9yivxn,o6Na!
+4GeqEyru5wLvV3QMln87cKFoYzh1.NbU jH9XJPWTiRCSskxB20fg,DIZpO6mdA?ta!
+U?Nd16zpoIK,7fn2Mx3svCwiuWyJq9GjaU?Nd16zpoIK,7fn2Mx3svCwiuWyJq9Gja!
+A6Z,0xSiP9 NhocnQv5yeaA6Z,0xSiP9 NhocnQv5yeaA6Z,0xSiP9 NhocnQv5yea!
+1Insu9?z,MCyjdof3iqU6K2vWGNp7xwJa1Insu9?z,MCyjdof3iqU6K2vWGNp7xwJa!
+OfSJbolwedDxTjh7Vytp0CXNFM5Gm,kW z8vE?Z2R9.KQu46gsPUYnLqAIBiH1c3ra!
+oxyN,v96niaoxyN,v96niaoxyN,v96niaoxyN,v96niaoxyN,v96niaoxyN,v96nia!
+DC KLaDC KLaDC KLaDC KLaDC KLaDC KLaDC KLaDC KLaDC KLaDC KLaDC KLa!
+7W63j,u1xGKidM9IwN2qoC?nJpvUfyzsa7W63j,u1xGKidM9IwN2qoC?nJpvUfyzsa!
+09cyZihvAx ne,Po56SNQa09cyZihvAx ne,Po56SNQa09cyZihvAx ne,Po56SNQa!
+MUx?3Nsdv1C6wzipuoWIyKJ,q79fGnj2aMUx?3Nsdv1C6wzipuoWIyKJ,q79fGnj2a!
+k15IXntshuD9l?Szr,HMACYygjQdRoEf 3miFq0UV6TKe2bvOWcGBNLpP74x.wZJ8a!
+vo9x6ynNi,avo9x6ynNi,avo9x6ynNi,avo9x6ynNi,avo9x6ynNi,avo9x6ynNi,a!
+R7AWl6X3ZjL,bu01ExYGSKti8dPMO9VI wgNr2hqko4Cc?TnmJQpHvDU5f.yBzesFa!
+uMoUWxI?y3KNJs,dqv719Cf6Gwnzji2pauMoUWxI?y3KNJs,dqv719Cf6Gwnzji2pa!
+Pv0oA95xc6 ySnZNeiQ,haPv0oA95xc6 ySnZNeiQ,haPv0oA95xc6 ySnZNeiQ,ha!
+quvM7o1U9WCxfI6?Gyw3nKzNjJis2,pdaquvM7o1U9WCxfI6?Gyw3nKzNjJis2,pda!
+HqPuRvkM07DoO1AU49EW5CVxlfcIY6.? GXyTwS3BngKZzmNtjeJriLsQ28,Fphdba!
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!`;
+
+
+`
+ztFnt2!
+Zm2wKJ!
+KZLGSz!
+ggJ6G3!
+nBtfYG!
+BSzCxI!
+3Tg9EC!
+SX311U!
+w T707!
+T.Gvuu!
+yY.qbd!
+XcId,2!
+Gll,LJ!
+ VCsjz!
+?5EJZ3!
+.EUN3G!
+64OKXI!
+YA736C!
+IOkylU!
+cDu?W7!
+f0HIAu!
+lkdx7d!
+xRFWR2!
+VP2UaJ!
+CHLoFz!
+5bJMs3!
+WhtueG!
+EFzazI!
+98gpBC!
+4Q32yU!
+ULTi.7!
+ArGjfu!
+1e.z5d!
+OtInU2!
+omlwDJ!
+DZCGvz!
+7gE6H3!
+0BUfpG!
+MSOCQI!
+kT79JC!
+vXk1mU!
+R u7n7!
+u.HvTu!
+PYdq?d!
+qcFdc2!
+Hl2,CJ!
+aVLs4z!
+b5JJo3!
+dEtNkG!
+h4zKqI!
+pAg3hC!
+FO3y2U!
+,DT?r7!
+80GINu!
+2k.xgd!
+QRIWw2!
+sPlU J!
+LHCoIz!
+ibEMV3!
+rhUu9G!
+JFOaOI!
+e87pMC!
+jQk2PU!
+tLuid7!
+NrHj8u!
+medzid!
+`
+
+lista = txt.split('!');
+for (let el of lista){
+    console.log(el);
+    console.log('object');
+}

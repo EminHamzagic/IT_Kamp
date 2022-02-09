@@ -707,4 +707,30 @@
 
 
 
+// function Divisors(num){
+//     var divisors = [];
+//     for (let i = 1; i <= num; i++){
+//         if (num % i === 0){
+//             divisors.push(i);
+//         }
+//     }
+//     return divisors;
+// }
 
+// function listSquared(m, n) {
+//     var squared = [];
+//     for (let i = m; i < n; i++){
+//         divisors = Divisors(i);
+//         sum = 0;
+//         for (let num of divisors) sum += num ** 2;
+//         if (Math.sqrt(sum) % 1 === 0){
+//             squared.push([i, sum]);
+//         }
+//     }
+//     return squared;
+// }
+
+
+// console.log(Divisors(15));
+// console.log(listSquared(1, 250));
+// console.log(Math.sqrt(29));

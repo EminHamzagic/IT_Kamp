@@ -642,41 +642,69 @@
 // console.log(txt.charCodeAt(0));
 // console.log(txt.charCodeAt(1));
 
-txt = String.fromCharCode('97')
+// txt = String.fromCharCode('97')
 
-function encode(str){
-    specials = 'ABCabc'
-    var chars = str.split('');
-    encoded = ''
-    new_chars = [];
-    for (let char of chars){
-        if (specials.includes(char)){
-            new_chars.push(String.fromCharCode(char.charCodeAt(0) + 23));
-        }
-        else {
-            new_chars.push(String.fromCharCode(char.charCodeAt(0) - 3));
-        }
-    }
-    for (let el of new_chars) encoded += el;
-    console.log(encoded);
-}
+// function encode(str){
+//     specials = 'ABCabc'
+//     var chars = str.split('');
+//     encoded = ''
+//     new_chars = [];
+//     for (let char of chars){
+//         if (specials.includes(char)){
+//             new_chars.push(String.fromCharCode(char.charCodeAt(0) + 23));
+//         }
+//         else {
+//             new_chars.push(String.fromCharCode(char.charCodeAt(0) - 3));
+//         }
+//     }
+//     for (let el of new_chars) encoded += el;
+//     console.log(encoded);
+// }
 
-function decode(str){
-    specials = 'ABCabc'
-    var chars = str.split('');
-    encoded = ''
-    new_chars = [];
-    for (let char of chars){
-        if (specials.includes(char)){
-            new_chars.push(String.fromCharCode(char.charCodeAt(0) + 3));
-        }
-        else {
-            new_chars.push(String.fromCharCode(char.charCodeAt(0) + 3));
-        }
-    }
-    for (let el of new_chars) encoded += el;
-    console.log(encoded);
-}
+// function decode(str){
+//     specials = 'ABCabc'
+//     var chars = str.split('');
+//     encoded = ''
+//     new_chars = [];
+//     for (let char of chars){
+//         if (specials.includes(char)){
+//             new_chars.push(String.fromCharCode(char.charCodeAt(0) + 3));
+//         }
+//         else {
+//             new_chars.push(String.fromCharCode(char.charCodeAt(0) + 3));
+//         }
+//     }
+//     for (let el of new_chars) encoded += el;
+//     console.log(encoded);
+// }
 
-encode('weeb');
-decode('tbby');
+// encode('weeb');
+// decode('tbby');
+
+
+
+
+// function longestConsec(strarr, k) {
+//     new_arr = [];
+//     for (let i = 0; i < strarr.length - (k - 1); i++){
+//         new_el = '';
+//         for (let j = i; j < i + k; j++){
+//             new_el += strarr[j];
+//         }
+//         new_arr.push(new_el);
+//     }
+//     max_str = '';
+//     for (let str of new_arr){
+//         if (str.length > max_str.length){
+//             max_str = str;
+//         }
+//     }
+//     return max_str
+// }
+
+// console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2));
+
+
+
+
+

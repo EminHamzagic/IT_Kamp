@@ -351,13 +351,57 @@
 
 
 
-function myDisplayer(some) {
-    console.log(some);
-}
+// function myDisplayer(some) {
+//     console.log(some);
+// }
 
-function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
-}
+// function myCalculator(num1, num2, myCallback) {
+//     let sum = num1 + num2;
+//     myCallback(sum);
+// }
 
-myCalculator(5, 5, myDisplayer);
+// myCalculator(5, 5, myDisplayer);
+
+
+
+
+
+// const persons = ['Cristina', 'Ana'];
+// const messages = persons.map((name) => {
+//     return `Hello, ${name}`;
+// });
+// console.log(messages);
+
+// function map(array, callback){
+//     console.log('map() start');
+//     const mappedArray = [];
+//     for (const item of array) { mappedArray.push(callback(item))}
+//     console.log('map() end');
+//     return mappedArray;
+// }
+
+// function greet(name){
+//     console.log('greet sarted');
+//     return `Hello, ${name}`;
+// }
+
+// const persons = ['Cristina'];
+// console.log(map(persons, greet));
+
+
+// Let has local scope
+let array = [1, 2, 3, 5, 2, 8, 9, 2]
+
+// array = array.filter((item) => {
+//     return item % 2 === 1;
+// })
+
+var list = array.reduce((num, current) => {
+    if (array.filter(x => x == current).length === 1){
+        num = x
+    }
+})
+console.log(list);
+// console.log(array);
+// Functional filter with an Arrow function
+// console.log(array.filter(x => x % 2 === 1).length)  // -> 3

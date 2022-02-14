@@ -405,33 +405,53 @@
 
 
 
-function formatWords(words){
-    words1 = []
-    for (let el of words){
-        if (el){
-            words1.push(el);
-        }
-    }
-    if (words1.length < 2){
-        if (words1.length === 0){
-            return '';
-        }
-        return words1[0];
-    }
-    else if (words1.length < 3){
-        return words1[0] + ' and ' + words1[1];
-    }
-    else{
-        new_str = ''
-        for (let i = 0; i < words1.length - 1; i++){
-            if (i === (words1.length - 2)){
-                new_str += words1[i] + ' and ' + words1[i + 1];
-                break
-            }
-            new_str += words1[i] + ', ';
-        }
-        return new_str
-    }
-}
+// function formatWords(words){
+//     words1 = []
+//     for (let el of words){
+//         if (el){
+//             words1.push(el);
+//         }
+//     }
+//     if (words1.length < 2){
+//         if (words1.length === 0){
+//             return '';
+//         }
+//         return words1[0];
+//     }
+//     else if (words1.length < 3){
+//         return words1[0] + ' and ' + words1[1];
+//     }
+//     else{
+//         new_str = ''
+//         for (let i = 0; i < words1.length - 1; i++){
+//             if (i === (words1.length - 2)){
+//                 new_str += words1[i] + ' and ' + words1[i + 1];
+//                 break
+//             }
+//             new_str += words1[i] + ', ';
+//         }
+//         return new_str
+//     }
+// }
 
-console.log(formatWords([]));
+// console.log(formatWords([]));
+
+
+
+
+
+
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('resolve');
+        reject('reject');
+    }, 3000)
+})
+
+myPromise.then((val) => {
+    console.log(val);
+}).catch((val) => {
+    console.log(val);
+}).finally(() => {
+    console.log('finally');
+})

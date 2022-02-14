@@ -389,19 +389,16 @@
 // console.log(map(persons, greet));
 
 
-// Let has local scope
-let array = [1, 2, 3, 5, 2, 8, 9, 2]
 
-// array = array.filter((item) => {
-//     return item % 2 === 1;
-// })
 
-var list = array.reduce((num, current) => {
-    if (array.filter(x => x == current).length === 1){
-        num = x
+
+let array = [1, 2, 3, 5, 5, 2, 8, 8, 9, 9, 2, 1]
+
+for (let i = 0; i < array.length; i++){
+    if ((array.filter((el) => {
+        return el == array[i];
+    }).length) % 2 === 1){
+        console.log([array[i]]);
+        break
     }
-})
-console.log(list);
-// console.log(array);
-// Functional filter with an Arrow function
-// console.log(array.filter(x => x % 2 === 1).length)  // -> 3
+}

@@ -392,13 +392,46 @@
 
 
 
-let array = [1, 2, 3, 5, 5, 2, 8, 8, 9, 9, 2, 1]
+// let array = [1, 2, 3, 5, 5, 2, 8, 8, 9, 9, 2, 1]
 
-for (let i = 0; i < array.length; i++){
-    if ((array.filter((el) => {
-        return el == array[i];
-    }).length) % 2 === 1){
-        console.log([array[i]]);
-        break
+// for (let i = 0; i < array.length; i++){
+//     if ((array.filter((el) => {
+//         return el == array[i];
+//     }).length) % 2 === 1){
+//         console.log([array[i]]);
+//         break
+//     }
+// }
+
+
+
+function formatWords(words){
+    words1 = []
+    for (let el of words){
+        if (el){
+            words1.push(el);
+        }
+    }
+    if (words1.length < 2){
+        if (words1.length === 0){
+            return '';
+        }
+        return words1[0];
+    }
+    else if (words1.length < 3){
+        return words1[0] + ' and ' + words1[1];
+    }
+    else{
+        new_str = ''
+        for (let i = 0; i < words1.length - 1; i++){
+            if (i === (words1.length - 2)){
+                new_str += words1[i] + ' and ' + words1[i + 1];
+                break
+            }
+            new_str += words1[i] + ', ';
+        }
+        return new_str
     }
 }
+
+console.log(formatWords([]));

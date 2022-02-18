@@ -736,20 +736,61 @@
 // console.log(Math.sqrt(29));
 
 
-function likes(names) {
-    like_str = '';
-    if (names.length < 1){
-        return 'no one likes this';
-    }
-    else if (names.length === 1){
-        return names[0] + ' likes this';
-    }
-    else if (names.length < 4){
-        return name[0] + ' and ' + name[1] + ' and ' + name[2] + ' like this';
-    }
-    else{
-        return name[0] + ', ' + name[1] + ' and ' + names.length - 2 + ' others like this';
-    }
+// function likes(names) {
+//     like_str = '';
+//     if (names.length < 1){
+//         return 'no one likes this';
+//     }
+//     else if (names.length === 1){
+//         return names[0] + ' likes this';
+//     }
+//     else if (names.length < 4){
+//         return name[0] + ' and ' + name[1] + ' and ' + name[2] + ' like this';
+//     }
+//     else{
+//         return name[0] + ', ' + name[1] + ' and ' + names.length - 2 + ' others like this';
+//     }
+// }
+
+// console.log(likes(['Max', 'John', 'Mark']));
+
+
+
+
+
+// function customFib(signature,indexes,n){
+//     if (signature.length >= n){
+//         return signature[n]
+//     }
+//     for (let i = 0; i <= n - signature.length; i++){
+//         new_num = 0;
+//         for (let index of indexes){
+//             new_num += signature[index];
+//         }
+//         for (let i = 0; i < signature.length - 1; i++){
+//             signature[i] = signature[i + 1];
+//         }
+//         signature[signature.length - 1] = new_num;
+//     }
+//     return signature[signature.length - 1]
+// }
+
+// console.log(customFib([3,5,2],[0,1,2],4));
+// console.log(customFib([7,3,4,1],[1,1],6));
+
+
+
+
+
+const getData = async () => {
+    let response = await fetch('https://catfact.ninja/facts?page=1&limit=8');
+    let res = await response.json();
+    res.data.forEach((el) => {
+        let box = document.createElement('div');
+        box.classList.add('box');
+        box.innerHTML = `<p>${el.fact}</p>`;
+        document.body.appendChild(box);
+    })
 }
 
-console.log(likes(['Max', 'John', 'Mark']));
+getData();
